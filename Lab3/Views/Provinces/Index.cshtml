@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Lab3.Models.Province>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProvinceCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProvinceName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.ProvinceCode)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProvinceName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProvinceCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProvinceCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProvinceCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
