@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0ee259ca5f9b01b09d0406966cb454136c8994f2"
+    "signature": "80fa1566a824972cfa3a4eefb8cf53c8f150f920"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v2.1": {
       "Lab3/1.0.0": {
         "dependencies": {
-          "EntityFramework": "6.2.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.4"
@@ -34,22 +33,6 @@
         },
         "compile": {
           "Lab3.dll": {}
-        }
-      },
-      "EntityFramework/6.2.0": {
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.2.61023.0"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.2.61023.0"
-          }
-        },
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3479,13 +3462,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "EntityFramework/6.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7u/Xw6dnODaoB8opNC/Uz8nT/LKOxsvJhObYU+m0CErCXdOsyTC1MZwqQoam8lMehLTxBoMBewvWoOQUBaUKsQ==",
-      "path": "entityframework/6.2.0",
-      "hashPath": "entityframework.6.2.0.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
