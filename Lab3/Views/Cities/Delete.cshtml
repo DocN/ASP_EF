@@ -23,6 +23,12 @@
         <dd>
             @Html.DisplayFor(model => model.Population)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Province)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Province.ProvinceCode)
+        </dd>
     </dl>
     
     <form asp-action="Delete">

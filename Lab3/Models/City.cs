@@ -12,5 +12,8 @@ namespace Lab3.Models
         public int CityId { get; set; }
         public String CityName { get; set; }
         public int Population { get; set; }
+
+        public String ProvinceCode { get; set; }
+        public Province Province { get; set; }
     }
 }
